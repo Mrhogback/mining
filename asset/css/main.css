@@ -89,11 +89,12 @@ body {
     width: 100%;
     margin: 0px;
     padding: 0px;
-    position: relative;
+    
     /* background: url('/asset/img/batu.jpg') center / cover no-repeat; */
     background-color: rgb(10, 10, 10);
     z-index: 1;
 }
+
 /* #about .container-fluid::before {
     content: "";
     position: absolute;
@@ -117,6 +118,7 @@ body {
 #about .row { 
     z-index: 1;
 }
+
 
 
 /* Service */
@@ -173,10 +175,9 @@ body {
 --------------------------------------------------------------*/
 .contact {
 background:rgb(255, 255, 255);
+padding-top: 40px; 
 }
-.contact .section-title {
-    padding-top: 40px;
-}
+
 .contact .info-item+.info-item {
     margin-top: 40px;
   }
@@ -265,7 +266,7 @@ background:rgb(255, 255, 255);
     cursor: pointer;
     box-shadow: 0 5px 5px rgb(0, 0, 0);
   }
-  .loading, .sent-message, .error-message {
+  .loading-message, .sent-message, .error-message {
     display: none;
   }
 

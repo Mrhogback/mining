@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Fungsi untuk menangani efek scroll
     const scrolled = () => {
-        if (window.scrollY >= 30) {
+        if (window.scrollY >= 100) {
             headerScrolled.classList.add("header-scrolled");
             if (topbarScrolled) {
                 topbarScrolled.classList.add("topbar-scrolled");
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     setTimeout(() => {
        hero.classList.add("show");
-    }, 8000); // Delay 500ms sebelum muncul
+    }, 5000); // Delay 500ms sebelum muncul
 });
 
 // document.addEventListener("DOMContentLoaded", function() {
@@ -99,5 +99,5 @@ document.addEventListener("DOMContentLoaded", function() {
             el.style.display = "block";
         });
 
-    }, 7000); // 7 detik
+    }, 4000); // 7 detik
 });
