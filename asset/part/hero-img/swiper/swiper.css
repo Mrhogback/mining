@@ -1,0 +1,43 @@
+.swiper {
+    width: 100%;
+    height: 100%; /* Pastikan tinggi tetap */
+  }
+  
+  .swiper-slide {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Pastikan gambar tetap proporsional */
+    
+  }
+  .swiper-pagination {
+   
+    position: relative;
+    top: 0;
+    margin: 0;
+  }
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 0;
+    top: 0;
+  }
+  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    display: inline-block;  
+    border-radius: 50%;
+    background:rgb(168, 168, 166);
+    
+  }
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #FAC11C;
+  }
+  
