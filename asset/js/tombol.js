@@ -99,5 +99,28 @@ document.addEventListener("DOMContentLoaded", function() {
             el.style.display = "block";
         });
 
-    }, 4000); // 7 detik
+    }, 1000); // 7 detik
 });
+
+const navbarHeight = 80; // ganti sesuai tinggi navbar kamu
+
+// document.querySelectorAll('.nav-link').forEach(link => {
+//   link.addEventListener('click', function(e) {
+//     e.preventDefault();
+//     const targetId = this.getAttribute('href');
+//     const targetSection = document.querySelector(targetId);
+
+//     if (targetSection) {
+//       const sectionTop = targetSection.offsetTop;
+//       const scrollToPosition = sectionTop - navbarHeight;
+
+//       window.scrollTo({
+//         top: scrollToPosition,
+//         behavior: 'smooth'
+//       });
+//     }
+//   });
+// });
+
+  
+  

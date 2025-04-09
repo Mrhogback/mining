@@ -24,8 +24,8 @@ class Header extends HTMLElement {
               <div class="social-links d-flex gap-3"> 
                 <a href="https://link.dialogika.co/twitter" class="twitter"><i class="bi bi-twitter"></i></a>
                 <a href="https://link.dialogika.co/facebook" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="https://link.dialogika.co/instagram" class="instagram"><i class="bi bi-instagram"></i></a>
-                <a href="https://link.dialogika.co/linkedin" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+                <a href="https://www.instagram.com/_mhudha/" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/miftakhul-hudha/" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
               </div>
             </div>
         </div>
@@ -55,7 +55,7 @@ class Header extends HTMLElement {
                   <li class="nav-item"><a class="nav-link text-white" href="#services">Services</a></li>
                   <li class="nav-item"><a class="nav-link text-white" href="#about">About Us</a></li>
                   <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact Us</a></li>
-                  <li class="nav-item"><a class="nav-link text-white" href="#portfolio">More</a></li>
+                  <li class="nav-item"><a class="nav-link text-white" href="#">More</a></li>
                 </ul>
               </div>
             </div>
