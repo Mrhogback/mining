@@ -99,42 +99,38 @@
         >
           <div class="row isi d-flex p-0 justify-content-between ">
             <div
-              class="col-12 col-md-4 left d-flex align-items-center justify-content-center"
+              class="col-12 col-md-4 leftService d-flex align-items-center justify-content-center"
             >
               <p class="text-center" style="line-height: 1">
                 Our <br />Services
               </p>
             </div>
-            <div class="col-12 col-md-8 right">
-              <div class="row h-100">
-                <div class="col-12 d-flex p-5 text-center align-items-center">
-                  <div class="col icons">
-                    <span class="material-icons">precision_manufacturing</span>
-                  </div>
-                  <div class="col icons">
-                    <span class="material-icons">front_loader</span>
-                  </div>
-                  <div class="col icons">
-                    <span class="material-icons">forklift</span>
-                  </div>
-                </div>
-                <div class="col-12 p-5 d-flex text-center align-items-center">
-                  <div class="col">
-                    <div class="col">
-                      <span class="material-icons">construction</span>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="col">
-                      <span class="material-icons">shopping_bag</span>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="col">
-                      <span class="material-icons">query_stats</span>
-                    </div>
-                  </div>
-                </div>
+            <div class="col-12 col-md-8 rightService d-flex justify-content-center align-items-center">
+              <div class=" d-flex flex-wrap gap-5 p-3 " style="max-width: 280px;"> 
+                 
+                    <span class="material-icons service-icon" data-service="Manufacturing"  
+                    data-description="Layanan manufaktur alat berat kami...">precision_manufacturing</span>
+                
+                
+                    <span class="material-icons service-icon" data-service="logistik"
+                    data-description="Layanan logistik kami meliputi ...">front_loader</span>
+                  
+                  
+                    <span class="material-icons service-icon" data-service="storage"
+                    data-description="Storage yang kami miliki .....">forklift</span>
+            
+               
+                    <span class="material-icons service-icon" data-service="building"
+                    data-description="kami fokus pada pembangunan....">construction</span>
+                 
+                 
+                    <span class="material-icons service-icon" data-service="Buy"
+                    data-description="Produk kamui bisa anda dapatkan....">shopping_bag</span>
+                  
+                 
+                    <span class="material-icons service-icon" data-service="data"
+                    data-description="Pertumbuhan stastik yang kami miliki...">query_stats</span>
+                  
               </div>
             </div>
           </div>
@@ -273,8 +269,7 @@
 
             <div class="col-lg-8">
               <form
-                action="forms/contact.php"
-                method="post"
+                
                 class="php-email-form"
                 data-aos="fade-up"
                 data-aos-delay="200"

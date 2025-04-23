@@ -10,15 +10,8 @@ class Header extends HTMLElement {
         <div id="topbar" class=" d-flex fixed-top ">
             <div class="container d-flex align-items-center justify-content-between">
               <div class="switch-theme d-flex align-items-center gap-3">
-                <div>Switch Theme</div>
-                <div class="theme">
-                  <span class="badge rounded-circle  p-2 efek white">
-                    <i class="bi bi-moon "></i>
-                  </span>
-                  <span class="badge rounded-circle  p-2 efek black">
-                    <i class="bi bi-sun "></i>
-                  </span>
-                </div>
+                <div>+62895422388034</div>
+                
                 
               </div>
               <div class="social-links d-flex gap-3"> 
@@ -55,7 +48,7 @@ class Header extends HTMLElement {
                   <li class="nav-item"><a class="nav-link text-white" href="#services">Services</a></li>
                   <li class="nav-item"><a class="nav-link text-white" href="#about">About Us</a></li>
                   <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact Us</a></li>
-                  <li class="nav-item"><a class="nav-link text-white" href="#">More</a></li>
+                  
                 </ul>
               </div>
             </div>

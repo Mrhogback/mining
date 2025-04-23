@@ -92,14 +92,14 @@ document.addEventListener("DOMContentLoaded", function() {
         // Tunggu transisi opacity selesai, lalu hapus elemen dari DOM
         setTimeout(() => {
             loadingScreen.remove();
-        }, 500); // Tunggu 0.5 detik agar transisi selesai
+        }, 3); // Tunggu 0.5 detik agar transisi selesai
 
         // Tampilkan konten utama
         document.querySelectorAll("main-header, main, sectionhero, sectionabout").forEach(el => {
             el.style.display = "block";
         });
 
-    }, 1000); // 7 detik
+    }, 4000); // 7 detik
 });
 
 const navbarHeight = 80; // ganti sesuai tinggi navbar kamu
@@ -122,5 +122,103 @@ const navbarHeight = 80; // ganti sesuai tinggi navbar kamu
 //   });
 // });
 
+// document.addEventListener("DOMContentLoaded", function() {
+//     const icons = document.querySelectorAll(".material-icons");
+//     const leftSection = document.querySelector(".leftService");
+//     const leftText = document.querySelector(".leftService p");
+//     const rightSection = document.querySelector(".rightService");
+//     const originalText = rightSection.innerHTML; // Simpan teks asli
+
+//     icons.forEach(icon => {
+//         icon.addEventListener("click", function() {
+//             const selectedService = icon.getAttribute("data-service");
+//             const description = icon.getAttribute("data-description");
+
+//             // Sembunyikan teks "Our Services"
+//             leftText.style.display = "none";
+
+//              // Bersihkan ikon di kanan
+//             rightSection.innerHTML = "";
+
+//             // Duplikasi ikon dan tampilkan di kiri
+//             const newIcon = icon.cloneNode(true);
+//             newIcon.style.fontSize = "80px";
+//             newIcon.style.color = "black";
+//             leftSection.appendChild(newIcon);
+
+//             // Tampilkan deskripsi layanan di kanan
+//              // Tambahkan deskripsi ke kanan
+//             rightSection.innerHTML = `
+//             <div class="text-white text-center p-4">
+//                 <h2 class="mb-3">${service}</h2>
+//                 <p>${description}</p>
+//                 <button class="btn btn-warning mt-3" onclick="resetServices()">Kembali</button>
+//             </div>
+//             `;
+//         });
+//     });
+//     function resetServices() {
+//         location.reload(); // cara paling cepat: reload halaman
+//         // Atau kamu bisa reset manual semua elemen ke state awal jika ingin tanpa reload
+//     };
+// });
   
-  
+document.addEventListener("DOMContentLoaded", function() {
+    const icons = document.querySelectorAll(".material-icons");
+    const leftSection = document.querySelector(".leftService");
+    const leftText = document.querySelector(".leftService p");
+    const rightSection = document.querySelector(".rightService");
+    const originalText = rightSection.innerHTML; // Simpan teks asli
+
+    icons.forEach(icon => {
+        icon.addEventListener("click", handleIconClick);
+    });
+
+    function handleIconClick(event)  {
+            const icon = event.currentTarget; // Ambil ikon yang diklik
+            const selectedService = icon.getAttribute("data-service");
+            const description = icon.getAttribute("data-description");
+
+            // Sembunyikan teks "Our Services"
+            leftText.style.display = "none";
+
+             // Bersihkan ikon di kanan
+            rightSection.innerHTML = "";
+
+            // Duplikasi ikon dan tampilkan di kiri
+            const newIcon = icon.cloneNode(true);
+            newIcon.style.fontSize = "80px";
+            newIcon.style.color = "black";
+            newIcon.style.cursor = "pointer";
+            newIcon.addEventListener("click", resetServices);
+            leftSection.appendChild(newIcon);
+
+            // Tampilkan deskripsi layanan di kanan
+             // Tambahkan deskripsi ke kanan
+            rightSection.innerHTML = `
+            <div class="text-white text-center p-4">
+                <h2 class="mb-3">${selectedService}</h2>
+                <p>${description}</p>
+                <button class="btn btn-warning mt-3" onclick="resetServices()">Kembali</button>
+            </div>
+            `;
+    };
+    window.resetServices = function () {
+        // Tampilkan kembali teks
+        leftText.style.display = "block";
+        
+        rightSection.innerHTML = originalText; // Kembalikan teks asli
+
+         // Hapus ikon besar di kiri
+        const bigIcon = leftSection.querySelector(".material-icons:not(p)");
+        if (bigIcon) bigIcon.remove();
+        
+        // Tambahkan kembali event listener ke ikon awal
+        const newIcons = rightSection.querySelectorAll(".material-icons");
+        newIcons.forEach(icon => {
+            icon.addEventListener("click", handleIconClick);
+        });
+    };
+
+   
+});
