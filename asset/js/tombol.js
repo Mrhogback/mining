@@ -187,6 +187,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // Duplikasi ikon dan tampilkan di kiri
             const newIcon = icon.cloneNode(true);
+            newIcon.classList.add("custom-icon");
             newIcon.style.fontSize = "80px";
             newIcon.style.color = "black";
             newIcon.style.cursor = "pointer";

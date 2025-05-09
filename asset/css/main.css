@@ -121,6 +121,14 @@ section {
     z-index: 1;
 }
 
+@media (max-width: 600px){
+  #hero {
+    height: 50vh;
+  }
+ .container-fluid {
+  height: 100%;
+ }
+}
 
 
 /* Service */
@@ -177,15 +185,23 @@ section {
     transform: scale(1.2);
     transition: all 0.3s ease-in-out;
 }
-#services .left span.material-icons {
-  margin-top: 20px;
-  animation: fadeIn 0.5s ease-in-out;
-}
+
+/* #services .left span.material-icons {
+  margin-top: 10px;
+  animation: fadeIn 0.6s ease forwards;
+} */
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.8); }
-  to { opacity: 1; transform: scale(1); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
 
 
 
@@ -193,8 +209,9 @@ section {
 # Contact Section
 --------------------------------------------------------------*/
 .contact {
-background:rgb(255, 255, 255);
+background:rgb(15, 15, 15);
 padding-top: 40px; 
+color: white;
 }
 
 .contact .info-item+.info-item {
@@ -202,7 +219,7 @@ padding-top: 40px;
   }
   
   .contact .info-item i {
-    color: var(--contrast-color);
+    color: black;
     background:rgb(235, 250, 28);
     font-size: 20px;
     width: 44px;
